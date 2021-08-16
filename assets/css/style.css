@@ -1,4 +1,5 @@
 :root{
+    --rfBlueColor: #03283d;
     --rfGrayLigth: #f5f3f3;
     --rfDarkBlue: #001621;
     --rfGray: #c2c2c2;
@@ -16,11 +17,20 @@ body{
     border-radius: 20px;
     padding: .5rem 1.5rem;
 }
+    .btn-outline-rfblue{
+        color: var(--rfBlueColor);
+        border: 1px solid var(--rfBlueColor);
+        transition: .3s;
+    }
+    .btn-outline-rfblue:hover{
+        background: var(--rfBlueColor);
+        color: #eee;
+    }
 .btn--secondary{
     background-color: var(--rfYellowLight);
-    text-align: center;
     color: var(--rfViolet);
     font-weight: 500;
+    text-align: center;
 }
 
 .banner{
@@ -41,10 +51,35 @@ body{
         color: #284c58
     }
     .banner--corretores a{
-        font-weight: bold;
         color: #284c58;
+        font-weight: bold;
     }
+.call-to-action{
+    background: #eeeeee;
+    border-radius: 5px;
+    color: var(--rfBlueColor);
+    font-size: .9rem;
+}
 
+    .call-to-action--icon::before{
+        
+        content: ' ';
+        background: url('../img/icons/chat.png') center .01rem no-repeat;
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-flex;
+        margin: 0 .5rem 0 0;
+        transition: .3s;
+    }
+    .call-to-action--button{
+        top: 0;
+        right: 0;
+    }
+        .call-to-action--button:hover .call-to-action--icon::before{
+            background: url('../img/icons/chat-w.png') center .01rem no-repeat;
+            background-size: 16px;
+        }
 /* Footer */
 .footer{
     background-color: var(--rfBlue);
@@ -67,26 +102,25 @@ body{
         font-weight: 500;
     }
 
-    .footer__list{}
     .footer__list li::before{
         content: '>';
         padding-right: .5rem;
     }
 
     .social{
-        border-radius: 50%;
-        display: inline-flex;
-        justify-content: center;
         align-items: center;
         background-color: white;
+        border-radius: 50%;
+        display: inline-flex;
         height: 32px;
+        justify-content: center;
         width: 32px;
     }
     .social img{
         max-width: 16px;
     }
 .copyright{
+    background-color: var(--rfDarkBlue);
     font-size: .75rem;
     text-transform: uppercase;
-    background-color: var(--rfDarkBlue);
 }
