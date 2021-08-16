@@ -30,6 +30,8 @@ body{
         background-image: url('../img/banners/banner-1.png');
         background-position: center center;
         background-size: cover;
+        flex: 0 0 calc(75% - 1rem);
+        margin-right: 1rem;
     }
         .banner--anuncio-text{
             color: var(--rfViolet);
