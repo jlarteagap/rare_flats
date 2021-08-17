@@ -7,10 +7,14 @@
     --rfViolet: #5b3243;
     --rfYellowLight: #fbf07c;
     --rfOrange: #f39c14;
+    --rfSite: #1c4161;
 }
 body{
-    background-color: var(--rfGrayLigth);
+    background: var(--rfGrayLigth);
     font-family: 'Rubik', sans-serif;
+}
+.wrapper{
+    background: url('../img/bg/bg.jpg') no-repeat top center / 100%;
 }
 /* utils */
 .btn {
@@ -32,7 +36,13 @@ body{
     font-weight: 500;
     text-align: center;
 }
-
+/* Sites header */
+.site__description{
+    color: var(--rfSite);
+    font-size: 2.5rem;
+    font-style: italic;
+    text-shadow: 0rem 0rem 2rem white;
+}
 .banner{
     border-radius: 5px;
 }
