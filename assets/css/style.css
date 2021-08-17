@@ -129,14 +129,17 @@ body{
     }
     .flats__zone--name{
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1;
     }
 .flats__price{
     color: var(--rfOrange);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
+    .flats__price--rent{
+        font-size: .85rem;
+    }
 .testimonial__card--date{
     font-size: .75rem;
     font-weight: 300;
