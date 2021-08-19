@@ -103,7 +103,33 @@ body{
     .header__title--rarus{
         font-weight: 500;
     }
-
+/* top search page */
+.top__search{
+    background: linear-gradient(#35708e, var(--rfGrayLigth));
+    z-index: 2;
+}
+.top__search--input{
+    font-size: .8rem;
+    border-radius: 0;
+    background: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid rgba(53, 114, 142, .20);
+}
+    .top__search--input::placeholder{
+        color: var(--rfHeaderLight);
+    }
+    .top__search--input:focus{
+        background: transparent;
+        color:  var(--rfBlueColor);
+        box-shadow: none;
+        border-bottom: 2px solid var(--rfBlueColor);
+    }
+.top__search--btn{
+    background: transparent;
+    border: none;
+}
 /* Search  */
 .search__card{
     background: rgba(255, 255, 255, .90);
