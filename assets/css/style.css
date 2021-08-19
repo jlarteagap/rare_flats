@@ -13,6 +13,10 @@
     --rfBlueLight: #35708e;
     --rfMenu: #decf7e;
 }
+
+html, body {
+    overflow-x:hidden 
+  } 
 body{
     background: var(--rfGrayLigth);
     font-family: 'Rubik', sans-serif;
