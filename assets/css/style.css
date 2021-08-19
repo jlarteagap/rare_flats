@@ -11,6 +11,7 @@
     --rfHeader: #004669;
     --rfHeaderLight: #235e7c;
     --rfBlueLight: #35708e;
+    --rfGreen: #00bb53;
     --rfMenu: #decf7e;
 }
 
@@ -51,11 +52,40 @@ body{
         background: var(--rfBlueColor);
         color: #eee;
     }
+
+    .btn-outline-orange{
+        font-size: .85rem;
+        color: var(--rfOrange);
+        font-weight: 500;
+        border: 1px solid var(--rfOrange);
+        transition: .3s;
+        padding: .3rem 1rem;
+        transition: .3s;
+    }
+    .btn-outline-orange:hover{
+        border: 1px solid var(--rfViolet);
+        color: var(--rfViolet);
+    }
+    
 .btn--secondary{
     background-color: var(--rfYellowLight);
     color: var(--rfViolet);
     font-weight: 500;
     text-align: center;
+}
+.btn--green{
+    font-size: .85rem;
+    color: white;
+    padding: .3rem 1rem;
+    background-color: var(--rfGreen);
+    color: var(white);
+    font-weight: 500;
+    text-align: center;
+    transition: .3s;
+}
+.btn--green:hover{
+    color: white;
+    background-color: var(--rfViolet);
 }
 /* Header  */
 .header{
@@ -413,6 +443,60 @@ body{
     text-transform: uppercase;
 }
 
+
+/********* SECOND PAGE  ***********/
+.flat__desc{
+    color: var(--rfBlueColor);
+}
+.flat__desc--title{
+    font-weight: bold;
+    line-height: .85;
+    margin: 0;
+}
+.flat_desc--code{
+    font-size: .85rem;
+    font-weight: 300;
+}
+    .flat_desc--code span{
+        padding: .1rem .3rem;
+        border-radius: 3px;
+        background: #dadada;
+    }
+.flat__desc--address{
+    font-size: 1.3rem;
+}
+.corretor__img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+.corretor__img::before{
+    background: var(--rfGreen);
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    outline: 3px solid white;
+    bottom:10px;
+    right: 0;
+}
+.corretor__img img{
+    max-width: 90px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.corretor__status{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--rfGreen);
+}
+.corretor__info a{
+    color: var(--rfBlueColor);
+    font-weight: 500;
+    text-decoration: underline;
+}
 @media only screen and (max-width: 600px) {
     .header{
         overflow: hidden;

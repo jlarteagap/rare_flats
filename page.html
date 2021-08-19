@@ -58,7 +58,8 @@
             </nav>
         </div>
     </header>    
-    <div class="wrapper">
+    <div class="wrapper__page">
+        <!-- Menu Collapsed  -->
         <div class="container collapse p-0 nav__menu sticky-top" id="rareflatsmenu">
             <nav class="navbar navbar-expand-lg">
                 <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
@@ -96,81 +97,144 @@
             <!-- Content -->
             <main class="container">
                 <!-- logo -->
-                <div class="logo text-center py-5">
-                    <img class="pt-3 pt-md-5 img-fluid logo__img" src="./assets/img/rarus-logo.png" alt="Rarus Flats">
-                    <h2 class="site__description mt-5 mt-md-5">
-                        Desde 1998 fazendo historia
-                    </h2>
-                </div>
-
-                <!-- Search  -->
-                <div class="row search__card search p-4 mt-2 my-md-2">
-                    <div class="col-12 text-center">
-                        <h3>Encontre o Flat ideal para você</h3>
+                <div class="row py-4">
+                    <div class="col-md-2">
+                        <div class="logo text-center">
+                            <img class="img-fluid logo__img" src="./assets/img/rarus-logo.png" alt="Rarus Flats">
+                        </div>
                     </div>
-
-                    <form class="form col-12 mt-3">
-                        <div class="row">
-                            <div class="col-12 search__form--col">
-                                <div class="form-group">
-                                    <label class="search--label" for="inputState"><img src="./assets/img/icons/finalidade.png" /> Finalidade</label>                                
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Selecione</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 search__form--col">
-                                <div class="form-group">
-                                    <label class="search--label" for="inputState"><img src="./assets/img/icons/barrio.png" /> bairro / região</label>                                
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Selecione</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 search__form--col">
-                                <div class="form-group">
-                                    <label class="search--label" for="inputState"><img src="./assets/img/icons/dormitorio.png" /> dormitórios</label>                                
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Selecione</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 search__form--col">
-                                <div class="form-group">
-                                    <label class="search--label" for="inputState"><img src="./assets/img/icons/money.png" /> VALOR Máximo</label>                                
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Selecione</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 search__form--col">
-                                <div class="form-group">
-                                    <label class="search--label" for="inputState"><img src="./assets/img/icons/codebar.png" /> código do imóvel</label>                                
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Selecione</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                            </div>
+                    <div class="col-md-8 flat__desc">
+                        <h3 class="flat__desc--title text-uppercase">Mandarim</h3>
+                        <div class="flat_desc--code">CÓDIGO: <span>DKV07033</span></div>
+                        <div class="flat__desc--address mt-3">Rua Sansao Alver dos Santos | Bairro <span class="font-weight-bold">Blooklin</span></div>
+                        <div class="flats__desc--buttons mt-3">
+                            <a href="#" class="btn btn-outline-orange mr-2 text-uppercase"><img class="mr-1" src="./assets/img/icons/flat__map.png" alt=""> ver mapa</a>
+                            <a href="#" class="mr-2 btn btn--green text-uppercase"><img class="mr-1" src="./assets/img/icons/flat__video.png" alt=""> ver mapa</a>
                         </div>
-                        <div class="col text-center">
-                            <button type="submit" class="btn btn--blue mb-2">realizar busca</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-                <!-- flats para venda  -->
+
+                <div class="row flat__content">
+                    <div class="col-md-8 mb-5">
+                        <!-- flat descriptions  -->
+                        <div class="row justify-content-between">
+                            <div class="col-5">
+                                <div class="flats__info d-flex justify-content-between align-items-end py-3">
+                                    <div class="flats__info--room text-center">
+                                        <img src="./assets/img/icons/room.png" alt="">
+                                        <div class="py-1">DORMITÓRIOS</div>
+                                        <div class="flats__info--room-stats">1</div>
+                                    </div>
+                                    <div class="flats__info--space text-center">
+                                        <img src="./assets/img/icons/space.png" alt="">
+                                        <div class="py-1">VAGAS</div>
+                                        <div class="flats__info--room-stats">1</div>
+                                    </div>
+                                    <div class="flats__info--area text-center">
+                                        <img src="./assets/img/icons/area.png" alt="">
+                                        <div class="py-1">ÁREA m²</div>
+                                        <div class="flats__info--room-stats">60</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 d-inline-flex">
+                                <div class="corretor__img mr-2">
+                                    <img src="./assets/img/user/1.png" alt="">
+                                </div>
+                                <div class="cooretor__text">
+                                    <div class="corretor__status">Corretor Online</div>
+                                    <div class="corretor__info">
+                                        Estamos prontos para tirar suas dúvidas. <a href="#">Clique Aqui</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About Flat -->
+                        <div class="row mt-5">
+                            <h2 class="col p-0">Sobre o Flat</h2>
+                            <div class="about__flat--text rf__card p-4">
+                                <p>O Flat possui varanda fechada, com piso em madeira de demolição, anexada a sala. Sala de estar ampla, com cozinha aberta e ilha Gourmet. Banheiro contemporâneo com Jacuzzi, pastilhas italianas, pia em limestone. Closet ele e ela, com armários pretos, super modernos. Projeto de iluminação la Lampe. Discretamente escondido, o lavabo fica  atrás de uma parede de madeira de demolição.</p>
+                            </div>
+                        </div>
+                        <!-- unidades Características -->
+                        <div class="row mt-5">
+                            <h3 class="col-12 p-0">Características da Unidade</h3>
+                            <div class="col-12 rf__card p-4">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>Armário Embutido</li>
+                                            <li>Cozinha Americana</li>
+                                            <li>Mobiliado</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>Armário Embutido</li>
+                                            <li>Cozinha Americana</li>
+                                            <li>Mobiliado</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>Armário Embutido</li>
+                                            <li>Cozinha Americana</li>
+                                            <li>Mobiliado</li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Condominio Características -->
+                        <div class="row mt-5">
+                            <h3 class="col-12 p-0">Caractertísticas do Condomínio</h3>
+                            <div class="col-12 rf__card p-4">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>Armário Embutido</li>
+                                            <li>Cozinha Americana</li>
+                                            <li>Mobiliado</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>Armário Embutido</li>
+                                            <li>Cozinha Americana</li>
+                                            <li>Mobiliado</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul>
+                                            <li>Armário Embutido</li>
+                                            <li>Cozinha Americana</li>
+                                            <li>Mobiliado</li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <h3 class="col-12 p-0">Localização</h3>
+                            <div class="col-12 rf__card p-4">
+                                <img class="img-fluid" src="./assets/img/map.png" alt="">
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+
+
+                <!-- flats para related  -->
                 <div class="row call-to-action p-2 mt-4">
                     <div class="col text-center">
-                        <h3>Flats para Venda</h3>
+                        <h3>Últimos Flats Visualizados</h3>
                     </div>
                 </div>
 
                 <!-- Venda  -->
-                <div class="row splide venda py-4 my-0 my-md-4">
+                <div class="row splide related py-4 my-0 my-md-4">
                     <div class="splide__arrows">
                         <button class="splide__arrow splide__arrow--prev">
                             <img src="./assets/img/icons/arrow-l.png" alt="">
@@ -437,305 +501,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row call-to-action p-2">
-                    <div class="col text-center">
-                        <h3>Flats para Alugar</h3>
-                    </div>
-                </div>
-
-                <!-- alugar  -->
-                <div class="row splide alugar py-4 my-0 my-md-4">
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <img src="./assets/img/icons/arrow-l.png" alt="">
-                        </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <img src="./assets/img/icons/arrow.png" alt="">
-                        </button>
-                    </div>
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="flats mx-2">
-                                    <div class="flats__images">
-                                        <img class="flats__images--img" src="./assets/img/flats/flats.jpg" alt="Flats para alugar">
-                                        <span class="flats__location px-3 py-1">
-                                            LOCAÇÃO
-                                        </span>
-                                    </div>
-                                    <div class="rf__card my-2 py-4 px-3">
-                                        <h2 class="flats__title text-center m-0">
-                                            HORIZONTE JK
-                                        </h2>
-                                        <div class="flats__code text-center">COD. BQF12898</div>
-                                        <div class="flats__info d-flex justify-content-between align-items-end py-3">
-                                            <div class="flats__info--room text-center">
-                                                <img src="./assets/img/icons/room.png" alt="">
-                                                <div class="py-1">DORMITÓRIOS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--space text-center">
-                                                <img src="./assets/img/icons/space.png" alt="">
-                                                <div class="py-1">VAGAS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--area text-center">
-                                                <img src="./assets/img/icons/area.png" alt="">
-                                                <div class="py-1">ÁREA m²</div>
-                                                <div class="flats__info--room-stats">60</div>
-                                            </div>
-                                        </div>
-                                        <div class="flats__zone text-uppercase text-center">
-                                            <div class="flats__zone--dist">Bairro</div>
-                                            <div class="flats__zone--name">
-                                                VILA NOVA CONCEIÇÃO
-                                            </div>
-                                        </div>
-                                        <div class="flats__price text-center pt-2">
-                                            R$ 7.600,00
-                                            <span class="flats__price--rent">por mês</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flats mx-2">
-                                    <div class="flats__images">
-                                        <img class="flats__images--img" src="./assets/img/flats/flats-1.jpg" alt="Flats para alugar">
-                                        <span class="flats__location px-3 py-1">
-                                            LOCAÇÃO
-                                        </span>
-                                    </div>
-                                    <div class="rf__card my-2 py-4 px-3">
-                                        <h2 class="flats__title text-center m-0">
-                                            MANDARIM
-                                        </h2>
-                                        <div class="flats__code text-center">COD. BQF12898</div>
-                                        <div class="flats__info d-flex justify-content-between align-items-end py-3">
-                                            <div class="flats__info--room text-center">
-                                                <img src="./assets/img/icons/room.png" alt="">
-                                                <div class="py-1">DORMITÓRIOS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--space text-center">
-                                                <img src="./assets/img/icons/space.png" alt="">
-                                                <div class="py-1">VAGAS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--area text-center">
-                                                <img src="./assets/img/icons/area.png" alt="">
-                                                <div class="py-1">ÁREA m²</div>
-                                                <div class="flats__info--room-stats">60</div>
-                                            </div>
-                                        </div>
-                                        <div class="flats__zone text-uppercase text-center">
-                                            <div class="flats__zone--dist">Bairro</div>
-                                            <div class="flats__zone--name">
-                                                BLOOKLIN
-                                            </div>
-                                        </div>
-                                        <div class="flats__price text-center pt-2">
-                                            R$ 7.600,00
-                                            <span class="flats__price--rent">por mês</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flats mx-2">
-                                    <div class="flats__images">
-                                        <img class="flats__images--img" src="./assets/img/flats/flats-2.jpg" alt="Flats para alugar">
-                                        <span class="flats__location px-3 py-1">
-                                            LOCAÇÃO
-                                        </span>
-                                    </div>
-                                    <div class="rf__card my-2 py-4 px-3">
-                                        <h2 class="flats__title text-center m-0">
-                                            HYPE JARDINS
-                                        </h2>
-                                        <div class="flats__code text-center">COD. BQF12898</div>
-                                        <div class="flats__info d-flex justify-content-between align-items-end py-3">
-                                            <div class="flats__info--room text-center">
-                                                <img src="./assets/img/icons/room.png" alt="">
-                                                <div class="py-1">DORMITÓRIOS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--space text-center">
-                                                <img src="./assets/img/icons/space.png" alt="">
-                                                <div class="py-1">VAGAS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--area text-center">
-                                                <img src="./assets/img/icons/area.png" alt="">
-                                                <div class="py-1">ÁREA m²</div>
-                                                <div class="flats__info--room-stats">60</div>
-                                            </div>
-                                        </div>
-                                        <div class="flats__zone text-uppercase text-center">
-                                            <div class="flats__zone--dist">Bairro</div>
-                                            <div class="flats__zone--name">
-                                                Jardins
-                                            </div>
-                                        </div>
-                                        <div class="flats__price text-center pt-2">
-                                            R$ 7.600,00
-                                            <span class="flats__price--rent">por mês</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flats mx-2">
-                                    <div class="flats__images">
-                                        <img class="flats__images--img" src="./assets/img/flats/flats-3.jpg" alt="Flats para alugar">
-                                        <span class="flats__location px-3 py-1">
-                                            LOCAÇÃO
-                                        </span>
-                                    </div>
-                                    <div class="rf__card my-2 py-4 px-3">
-                                        <h2 class="flats__title text-center m-0">
-                                            DNA FARIA LIMA
-                                        </h2>
-                                        <div class="flats__code text-center">COD. BQF12898</div>
-                                        <div class="flats__info d-flex justify-content-between align-items-end py-3">
-                                            <div class="flats__info--room text-center">
-                                                <img src="./assets/img/icons/room.png" alt="">
-                                                <div class="py-1">DORMITÓRIOS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--space text-center">
-                                                <img src="./assets/img/icons/space.png" alt="">
-                                                <div class="py-1">VAGAS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--area text-center">
-                                                <img src="./assets/img/icons/area.png" alt="">
-                                                <div class="py-1">ÁREA m²</div>
-                                                <div class="flats__info--room-stats">60</div>
-                                            </div>
-                                        </div>
-                                        <div class="flats__zone text-uppercase text-center">
-                                            <div class="flats__zone--dist">Bairro</div>
-                                            <div class="flats__zone--name">
-                                                Pinheiros
-                                            </div>
-                                        </div>
-                                        <div class="flats__price text-center pt-2">
-                                            R$ 7.600,00
-                                            <span class="flats__price--rent">por mês</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flats mx-2">
-                                    <div class="flats__images">
-                                        <img class="flats__images--img" src="./assets/img/flats/flats.jpg" alt="Flats para alugar">
-                                        <span class="flats__location px-3 py-1">
-                                            LOCAÇÃO
-                                        </span>
-                                    </div>
-                                    <div class="rf__card my-2 py-4 px-3">
-                                        <h2 class="flats__title text-center m-0">
-                                            HORIZONTE JK
-                                        </h2>
-                                        <div class="flats__code text-center">COD. BQF12898</div>
-                                        <div class="flats__info d-flex justify-content-between align-items-end py-3">
-                                            <div class="flats__info--room text-center">
-                                                <img src="./assets/img/icons/room.png" alt="">
-                                                <div class="py-1">DORMITÓRIOS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--space text-center">
-                                                <img src="./assets/img/icons/space.png" alt="">
-                                                <div class="py-1">VAGAS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--area text-center">
-                                                <img src="./assets/img/icons/area.png" alt="">
-                                                <div class="py-1">ÁREA m²</div>
-                                                <div class="flats__info--room-stats">60</div>
-                                            </div>
-                                        </div>
-                                        <div class="flats__zone text-uppercase text-center">
-                                            <div class="flats__zone--dist">Bairro</div>
-                                            <div class="flats__zone--name">
-                                                VILA NOVA CONCEIÇÃO
-                                            </div>
-                                        </div>
-                                        <div class="flats__price text-center pt-2">
-                                            R$ 7.600,00
-                                            <span class="flats__price--rent">por mês</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flats mx-2">
-                                    <div class="flats__images">
-                                        <img class="flats__images--img" src="./assets/img/flats/flats.jpg" alt="Flats para alugar">
-                                        <span class="flats__location px-3 py-1">
-                                            LOCAÇÃO
-                                        </span>
-                                    </div>
-                                    <div class="rf__card my-2 py-4 px-3">
-                                        <h2 class="flats__title text-center m-0">
-                                            HORIZONTE JK
-                                        </h2>
-                                        <div class="flats__code text-center">COD. BQF12898</div>
-                                        <div class="flats__info d-flex justify-content-between align-items-end py-3">
-                                            <div class="flats__info--room text-center">
-                                                <img src="./assets/img/icons/room.png" alt="">
-                                                <div class="py-1">DORMITÓRIOS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--space text-center">
-                                                <img src="./assets/img/icons/space.png" alt="">
-                                                <div class="py-1">VAGAS</div>
-                                                <div class="flats__info--room-stats">1</div>
-                                            </div>
-                                            <div class="flats__info--area text-center">
-                                                <img src="./assets/img/icons/area.png" alt="">
-                                                <div class="py-1">ÁREA m²</div>
-                                                <div class="flats__info--room-stats">60</div>
-                                            </div>
-                                        </div>
-                                        <div class="flats__zone text-uppercase text-center">
-                                            <div class="flats__zone--dist">Bairro</div>
-                                            <div class="flats__zone--name">
-                                                VILA NOVA CONCEIÇÃO
-                                            </div>
-                                        </div>
-                                        <div class="flats__price text-center pt-2">
-                                            R$ 7.600,00
-                                            <span class="flats__price--rent">por mês</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- banners  -->
-                <div class="row mt-2 mt-md-5 mb-3">
-                    <div class="col-12 col-md-9 mb-3 mb-md-0 banner banner--anuncio d-flex justify-content-end">
-                            <div class="banner--anuncio-text col-md-4 py-5 text-right">
-                                <h5>Anuncie seu FLAT</h5>
-                                <p>Alugue, venda ou tenha seu Flat administrado pela RARUS</p>
-                                <a href="#" class="btn btn--secondary"><span class="font-weight-light">></span></i> Clique Aqui</a>
-                            </div>
-
-                    </div>
-                    <div class="banner banner--corretores col-12 col-md-3">
-                        <div class="col-8 py-5">
-                            <h4>Contratamos Corretores</h4>
-                            <p>Faça parte do time da Rarus Flats</p>
-                            <a href="#">Venha trabalhar conosco!</a>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- call to action  -->
                 <div class="row call-to-action p-2">
@@ -871,9 +636,27 @@
         </footer>
         <div class="copyright col-12 text-center text-uppercase py-2">todos os direitos reservados . RARUS FLATS</div>
     
-
     <script src="./assets/js/slides.js"></script>
-    
+    <script>
+    new Splide('.related', {
+    type   : 'loop',
+    perPage: 4,
+    perMove: 1,
+    autoplay: true,
+    rewind: true,
+    breakpoints: {
+        480: {
+            perPage: 1
+        },
+        640: {
+            perPage: 2,
+        },
+        860:{
+            perPage: 3
+        }
+}
+}).mount();
+</script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
