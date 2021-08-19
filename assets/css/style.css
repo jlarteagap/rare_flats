@@ -568,6 +568,11 @@ body{
     text-decoration: underline;
 }
 /* custom slide in page  */
+
+.splide__slide img {
+	width : 100%;
+	height: auto;
+}
 .top__slides__arrows{
     margin: 0 auto;
     max-width: 1140px;
