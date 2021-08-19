@@ -196,7 +196,7 @@ body{
             color: var(--rfViolet);
         }
     .banner--corretores{
-        background: url('../img//banners/banner2.png') no-repeat right, #cae4ec;
+        background: url('../img//banners/banner2.png') no-repeat right / cover, #cae4ec;
         color: #284c58
     }
     .banner--corretores a{
