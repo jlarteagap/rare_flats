@@ -114,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="row flat__content">
+                <div class="row flat__content justify-content-between ">
                     <div class="col-md-8 mb-5">
                         <!-- flat descriptions  -->
                         <div class="row justify-content-between">
@@ -222,6 +222,50 @@
                                 <img class="img-fluid" src="./assets/img/map.png" alt="">
                             </div>
                         </div>                    
+                    </div>
+                    <div class="col-md-3 flat__details">
+                        <div class="rf__card p-3">
+                            <div class="flat__details--title d-flex">
+                                <div class="flat__details--icons mr-2">
+                                    <img src="./assets/img/icons/flame.png" class="flat_details--img" alt="">
+                                </div>
+                                <h3 class="flat__details--heading d-flex  align-items-center">Alta Procura</h3>
+                            </div>
+                            <p class="mt-4 mb-0">Esse flat teve <strong>48 visitas</strong> no perfilnas últimas 24 horas</p>
+                            <div class="flat__details--sections mt-4"></div>
+                                <div class="flat__details--title d-flex">
+                                    <div class="flat__details--icons mr-2">
+                                        <img src="./assets/img/icons/phone.png" class="flat_details--img" alt="">
+                                    </div>
+                                    <div class="flat__details-widget">
+                                        <h3 class="flat__details--heading">Ligue</h3>
+                                        <div class="flat__details--phone">
+                                            +55 (11)3050-7600
+                                        </div>
+                                    </div>      
+                                </div>
+
+                            <div class="flat__details--sections mt-4">
+                                <div class="flat__details--title d-flex">
+                                    <div class="flat__details--icons mr-2">
+                                        <img src="./assets/img/icons/whatsApp1.png" class="flat_details--img" alt="">
+                                    </div>
+                                    <div class="flat__details-widget">
+                                        <h3 class="flat__details--heading">WhatsApp</h3>
+                                        <div class="flat__details--phone">
+                                            +55 (11)3050-7600
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+                            <div class="mt-4 flats__price text-center pt-2">
+                                R$ 7.600,00
+                                <span class="flats__price--rent">por mês</span>
+                            </div>
+                            <div class="col-12 text-center mt-3">
+                                <button type="submit" class="btn btn--blue mb-2 flat__details--btn">agende uma visita</button>
+                            </div>   
+                        </div>
                     </div>
                 </div>
 
@@ -636,8 +680,26 @@
         </footer>
         <div class="copyright col-12 text-center text-uppercase py-2">todos os direitos reservados . RARUS FLATS</div>
     
-    <script src="./assets/js/slides.js"></script>
     <script>
+        new Splide( '.testimonial', {
+        type   : 'loop',
+        perPage: 3,
+        perMove: 1,
+        autoplay: true,
+        rewind: true,
+        breakpoints: {
+            480: {
+                perPage: 1
+            },
+            640: {
+                perPage: 2
+            },
+            860:{
+                perPage: 2
+            }
+        }
+
+}).mount();
     new Splide('.related', {
     type   : 'loop',
     perPage: 4,
