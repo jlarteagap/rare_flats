@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="./assets/js/splide.min.js"></script>
     <title>Rare Flats</title>
 </head>
 <body>
@@ -94,16 +93,15 @@
             </nav>
         </div>
         <div class="container-fluid">
-            <!-- Content -->
-            <main class="container">
-                <!-- logo -->
+            <!-- header page  -->
+            <div class="container">
                 <div class="row py-4">
                     <div class="col-md-2">
                         <div class="logo text-center">
                             <img class="img-fluid logo__img" src="./assets/img/rarus-logo.png" alt="Rarus Flats">
                         </div>
                     </div>
-                    <div class="col-md-8 flat__desc">
+                    <div class="col-md-8 flat__desc mt-5 mt-md-0">
                         <h3 class="flat__desc--title text-uppercase">Mandarim</h3>
                         <div class="flat_desc--code">CÓDIGO: <span>DKV07033</span></div>
                         <div class="flat__desc--address mt-3">Rua Sansao Alver dos Santos | Bairro <span class="font-weight-bold">Blooklin</span></div>
@@ -113,12 +111,29 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="row flat__content justify-content-between ">
-                    <div class="col-md-8 mb-5">
+            <!-- slides -->
+            <div class="row splide top__slide mb-3 mb-md-5" id="top__slide">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./assets/img/flats_details/flat__1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./assets/img/flats_details/flat__1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./assets/img/flats_details/flat__1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./assets/img/flats_details/flat__1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./assets/img/flats_details/flat__1.png" alt=""></li>
+                        <li class="splide__slide"><img src="./assets/img/flats_details/flat__1.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Content -->
+            <main class="container">
+                <div class="row flat__content justify-content-between position-relative">
+                    <div class="col-md-8 mb-3 col-md-5 flat__all-info">
                         <!-- flat descriptions  -->
                         <div class="row justify-content-between">
-                            <div class="col-5">
+                            <div class="col-12 col-md-5">
                                 <div class="flats__info d-flex justify-content-between align-items-end py-3">
                                     <div class="flats__info--room text-center">
                                         <img src="./assets/img/icons/room.png" alt="">
@@ -137,7 +152,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 d-inline-flex">
+                            <div class="col-12 col-md-6 d-inline-flex">
                                 <div class="corretor__img mr-2">
                                     <img src="./assets/img/user/1.png" alt="">
                                 </div>
@@ -160,24 +175,24 @@
                         <!-- unidades Características -->
                         <div class="row mt-5">
                             <h3 class="col-12 p-0">Características da Unidade</h3>
-                            <div class="col-12 rf__card p-4">
+                            <div class="col-12 rf__card p-4 p-md-4">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <ul>
+                                    <div class="col-12 col-md-4">
+                                        <ul class="list-unstyled flat__caracteristicas">
                                             <li>Armário Embutido</li>
                                             <li>Cozinha Americana</li>
                                             <li>Mobiliado</li>
                                         </ul>
                                     </div>
-                                    <div class="col-4">
-                                        <ul>
+                                    <div class="col-12 col-md-4">
+                                        <ul class="list-unstyled flat__caracteristicas">
                                             <li>Armário Embutido</li>
                                             <li>Cozinha Americana</li>
                                             <li>Mobiliado</li>
                                         </ul>
                                     </div>
-                                    <div class="col-4">
-                                        <ul>
+                                    <div class="col-12 col-md-4">
+                                        <ul class="list-unstyled flat__caracteristicas">
                                             <li>Armário Embutido</li>
                                             <li>Cozinha Americana</li>
                                             <li>Mobiliado</li>
@@ -192,22 +207,22 @@
                             <h3 class="col-12 p-0">Caractertísticas do Condomínio</h3>
                             <div class="col-12 rf__card p-4">
                                 <div class="row">
-                                    <div class="col-4">
-                                        <ul>
+                                    <div class="col-12 col-md-4">
+                                        <ul class="list-unstyled flat__caracteristicas">
                                             <li>Armário Embutido</li>
                                             <li>Cozinha Americana</li>
                                             <li>Mobiliado</li>
                                         </ul>
                                     </div>
-                                    <div class="col-4">
-                                        <ul>
+                                    <div class="col-12 col-md-4">
+                                        <ul class="list-unstyled flat__caracteristicas">
                                             <li>Armário Embutido</li>
                                             <li>Cozinha Americana</li>
                                             <li>Mobiliado</li>
                                         </ul>
                                     </div>
-                                    <div class="col-4">
-                                        <ul>
+                                    <div class="col-12 col-md-4">
+                                        <ul class="list-unstyled flat__caracteristicas">
                                             <li>Armário Embutido</li>
                                             <li>Cozinha Americana</li>
                                             <li>Mobiliado</li>
@@ -223,48 +238,50 @@
                             </div>
                         </div>                    
                     </div>
-                    <div class="col-md-3 flat__details">
-                        <div class="rf__card p-3">
-                            <div class="flat__details--title d-flex">
-                                <div class="flat__details--icons mr-2">
-                                    <img src="./assets/img/icons/flame.png" class="flat_details--img" alt="">
-                                </div>
-                                <h3 class="flat__details--heading d-flex  align-items-center">Alta Procura</h3>
-                            </div>
-                            <p class="mt-4 mb-0">Esse flat teve <strong>48 visitas</strong> no perfilnas últimas 24 horas</p>
-                            <div class="flat__details--sections mt-4"></div>
+                    <div class="col-md-3 flat__details position-absolute">
+                        <div class="row">
+                            <div class="rf__card p-3">
                                 <div class="flat__details--title d-flex">
                                     <div class="flat__details--icons mr-2">
-                                        <img src="./assets/img/icons/phone.png" class="flat_details--img" alt="">
+                                        <img src="./assets/img/icons/flame.png" class="flat_details--img" alt="">
                                     </div>
-                                    <div class="flat__details-widget">
-                                        <h3 class="flat__details--heading">Ligue</h3>
-                                        <div class="flat__details--phone">
-                                            +55 (11)3050-7600
-                                        </div>
-                                    </div>      
+                                    <h3 class="flat__details--heading d-flex  align-items-center">Alta Procura</h3>
                                 </div>
-
-                            <div class="flat__details--sections mt-4">
-                                <div class="flat__details--title d-flex">
-                                    <div class="flat__details--icons mr-2">
-                                        <img src="./assets/img/icons/whatsApp1.png" class="flat_details--img" alt="">
+                                <p class="mt-4 mb-0">Esse flat teve <strong>48 visitas</strong> no perfilnas últimas 24 horas</p>
+                                <div class="flat__details--sections mt-4"></div>
+                                    <div class="flat__details--title d-flex">
+                                        <div class="flat__details--icons mr-2">
+                                            <img src="./assets/img/icons/phone.png" class="flat_details--img" alt="">
+                                        </div>
+                                        <div class="flat__details-widget">
+                                            <h3 class="flat__details--heading">Ligue</h3>
+                                            <div class="flat__details--phone">
+                                                +55 (11)3050-7600
+                                            </div>
+                                        </div>      
                                     </div>
-                                    <div class="flat__details-widget">
-                                        <h3 class="flat__details--heading">WhatsApp</h3>
-                                        <div class="flat__details--phone">
-                                            +55 (11)3050-7600
+    
+                                <div class="flat__details--sections mt-4">
+                                    <div class="flat__details--title d-flex">
+                                        <div class="flat__details--icons mr-2">
+                                            <img src="./assets/img/icons/whatsApp1.png" class="flat_details--img" alt="">
                                         </div>
-                                    </div>      
+                                        <div class="flat__details-widget">
+                                            <h3 class="flat__details--heading">WhatsApp</h3>
+                                            <div class="flat__details--phone">
+                                                +55 (11)3050-7600
+                                            </div>
+                                        </div>      
+                                    </div>
                                 </div>
+                                <div class="mt-4 flats__price text-center pt-2">
+                                    R$ 7.600,00
+                                    <span class="flats__price--rent">por mês</span>
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <button type="submit" class="btn btn--blue mb-2 flat__details--btn">agende uma visita</button>
+                                </div>   
                             </div>
-                            <div class="mt-4 flats__price text-center pt-2">
-                                R$ 7.600,00
-                                <span class="flats__price--rent">por mês</span>
-                            </div>
-                            <div class="col-12 text-center mt-3">
-                                <button type="submit" class="btn btn--blue mb-2 flat__details--btn">agende uma visita</button>
-                            </div>   
                         </div>
                     </div>
                 </div>
@@ -278,7 +295,7 @@
                 </div>
 
                 <!-- Venda  -->
-                <div class="row splide related py-4 my-0 my-md-4">
+                <div class="row splide related py-4 my-0 my-md-4" id="related">
                     <div class="splide__arrows">
                         <button class="splide__arrow splide__arrow--prev">
                             <img src="./assets/img/icons/arrow-l.png" alt="">
@@ -558,7 +575,7 @@
                 </div>
                 
                 <!-- testimonials -->
-                <div class="row splide testimonial py-4 mb-5">
+                <div class="row splide testimonial py-4 mb-5" id="testimonial">
                     <div class="splide__arrows">
                         <button class="splide__arrow splide__arrow--prev">
                             <img src="./assets/img/icons/arrow-l.png" alt="">
@@ -680,45 +697,70 @@
         </footer>
         <div class="copyright col-12 text-center text-uppercase py-2">todos os direitos reservados . RARUS FLATS</div>
     
+    <script src="./assets/js/splide.min.js"></script>
     <script>
-        new Splide( '.testimonial', {
-        type   : 'loop',
-        perPage: 3,
-        perMove: 1,
-        autoplay: true,
-        rewind: true,
-        breakpoints: {
-            480: {
-                perPage: 1
-            },
-            640: {
-                perPage: 2
-            },
-            860:{
-                perPage: 2
-            }
+        new Splide('.related', {
+            type   : 'loop',
+            perPage: 4,
+            perMove: 1,
+            autoplay: true,
+            rewind: true,
+            breakpoints: {
+                480: {
+                    perPage: 1
+                },
+                640: {
+                    perPage: 2,
+                },
+                860:{
+                    perPage: 3
+                }
         }
+        }).mount();
 
-}).mount();
-    new Splide('.related', {
-    type   : 'loop',
-    perPage: 4,
-    perMove: 1,
-    autoplay: true,
-    rewind: true,
-    breakpoints: {
-        480: {
-            perPage: 1
-        },
-        640: {
-            perPage: 2,
-        },
-        860:{
-            perPage: 3
-        }
-}
-}).mount();
-</script>
+        new Splide( '#testimonial', {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+            autoplay: true,
+            rewind: true,
+            breakpoints: {
+                480: {
+                    perPage: 1
+                },
+                640: {
+                    perPage: 2
+                },
+                860:{
+                    perPage: 2
+                }
+            }
+        }).mount();
+
+        new Splide( '#top__slide', {
+            type   : 'loop',
+            perPage: 4,
+            perMove: 1,
+            autoplay: true,
+            classes: {
+                arrows: 'splide__arrows top__slides__arrows',
+                arrow : 'splide__arrow top__slides--arrow',
+                prev  : 'splide__arrow--prev top__slide-prev',
+                next  : 'splide__arrow--next top__slide-next',
+            },
+            breakpoints: {
+                480: {
+                    perPage: 1
+                },
+                640: {
+                    perPage: 2
+                },
+                860:{
+                    perPage: 2
+                }
+            }
+        }).mount();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
