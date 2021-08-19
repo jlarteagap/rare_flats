@@ -104,8 +104,8 @@ body{
     }
 
 .header__whatsapp{
-    display: block;
     background: var(--rfBlueLight);
+    display: block;
     position: relative;
     transition: .3s;
 }
@@ -123,13 +123,13 @@ body{
         right: 0;
     }
     .header__whatsapp::after{
-        content: '';
         border-bottom: 5px solid var(--rfBlueLight);
-        position: absolute;
         bottom: -5px;
+        content: '';
         left: 0;
-        width: 100%;
+        position: absolute;
         transition: .3s;
+        width: 100%;
     }
     .header__whatsapp:hover{
         background-color: var(--rfBlueColor);
@@ -314,6 +314,9 @@ body{
     top: 50%;
 
 }
+.testimonial, .venda, .alugar {
+    overflow: clip;
+}
 .testimonial__more{
     color: var(--rfBlueColor);
     font-style: italic;
@@ -331,25 +334,24 @@ body{
         right: 5px;
     }
     .splide__arrow--prev::after, .splide__arrow--next::after{
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        border-right: 50px solid transparent;
-        border-top: 50px solid white;
-        border-left: 50px solid white;
-        border-bottom: 50px solid transparent;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
-        content: '';
-        z-index: -1;
+        border-bottom: 50px solid transparent;
+        border-left: 50px solid white;
+        border-right: 50px solid transparent;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-top: 50px solid white;
         box-shadow: -10px -10px 10px -4px rgba(0, 0, 0, 0.2);
+        content: '';
+        height: 0px;
+        position: absolute;
+        width: 0px;
+        z-index: -1;
     }
     .splide__arrow--prev::after{
-        transform: rotate(135deg);
         left: -55px;
-        /* box-shadow: -10px -10px 10px -4px rgba(0, 0, 0, 0.2); */
+        transform: rotate(135deg);
     }
     .splide__arrow--next::after{
     right: -55px;
@@ -402,17 +404,36 @@ body{
     }
 .copyright{
     background-color: var(--rfDarkBlue);
+    color: var(--rfGray) ;
     font-size: .75rem;
     text-transform: uppercase;
 }
 
 @media only screen and (max-width: 600px) {
+    .header{
+        overflow: hidden;
+    }
+    .header__whatsapp{
+        order: 2;
+        width: 100%;
+    }
+    .header__title{
+        font-size: .6rem;
+        margin-right: 0;
+        order: 0;
+        text-align: center;
+        width: 50%;
+    }
     .logo__img{
         max-width: 180px;
     }
-        .banner--anuncio{
-            flex: 0 0 100%;
-        }
+    .banner--anuncio{
+        background-position: 80%;
+        flex: 0 0 100%;
+    }
+    .call-to-action--button{
+        position: relative !important;
+    }
         .site__description{
             font-size: 1.5rem;
         }
